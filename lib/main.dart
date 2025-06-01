@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:stroll_activity/app/views/home_view.dart';
+import 'package:stroll_activity/app/base_nav/views/base_nav_view.dart';
 
 void main() {
   runApp(const MainApp());
@@ -18,7 +18,7 @@ class MainApp extends StatelessWidget {
       splitScreenMode: false,
       builder: (context, child) => const MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: HomeView(),
+        home: BaseNavView(),
       ),
     );
   }

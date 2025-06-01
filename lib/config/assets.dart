@@ -6,4 +6,6 @@ abstract class Assets {
   static String strollFire = 'stroll-fire'.png;
   static String time = 'time'.svg;
   static String person = 'person'.svg;
+  static String mic = 'mic'.svg;
+  static String arrowButton = 'arrow-button'.svg;
 }
