@@ -24,18 +24,18 @@ class _HomePromptSelectorState extends State<HomePromptSelector> {
       return Padding(
         padding: EdgeInsets.symmetric(horizontal: 16.h),
         child: SizedBox(
-          height: 132.h,
+          height: 138.h,
           child: GridView.builder(
             itemCount: 4,
             padding: EdgeInsets.zero,
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
-                childAspectRatio: 166.w / 60.h,
+                childAspectRatio: 166.w / 62.h,
                 mainAxisSpacing: 12.h,
                 crossAxisSpacing: 12.w),
             itemBuilder: (context, index) {
               return Container(
-                padding: EdgeInsets.symmetric(horizontal: 9.w, vertical: 11.h),
+                padding: EdgeInsets.symmetric(horizontal: 9.w, vertical: 9.h),
                 decoration: BoxDecoration(
                   color: Color(0xFF232A2E),
                   borderRadius: BorderRadius.circular(12.r),
