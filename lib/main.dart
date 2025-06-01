@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:stroll_activity/app/views/home_view.dart';
 
 void main() {
   runApp(const MainApp());
@@ -9,11 +11,14 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
+    return ScreenUtilInit(
+      useInheritedMediaQuery: true,
+      designSize: const Size(375, 812),
+      minTextAdapt: true,
+      splitScreenMode: false,
+      builder: (context, child) => const MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: HomeView(),
       ),
     );
   }
