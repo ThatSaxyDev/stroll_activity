@@ -23,7 +23,7 @@ class HomeHeaderWidget extends StatelessWidget {
               padding: EdgeInsets.only(top: 10.h),
               child: MyIcon(
                 icon: Assets.arrowDown,
-                height: 5.23.h,
+                height: 10.h,
               ),
             ),
           ],
