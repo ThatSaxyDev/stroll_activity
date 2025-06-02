@@ -16,6 +16,7 @@ class _BaseNavViewState extends State<BaseNavView> {
   Widget build(BuildContext context) {
     return currentView.sync(
       builder: (context, value, child) => Scaffold(
+        extendBody: true,
         body: currentView.value.view,
         bottomNavigationBar: BottomNavWidget(
           baseNavState: currentView.value,
