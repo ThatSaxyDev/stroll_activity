@@ -23,3 +23,16 @@ flutter:
   assets:
     - assets/images/
     - assets/icons/
+    - assets/fonts/
+  
+  fonts:
+    - family: ProximaNova
+      fonts:
+        - asset: assets/fonts/ProximaNova-Regular.otf
+          weight: 400
+        - asset: assets/fonts/Proxima Nova Semibold.otf
+          weight: 500
+        - asset: assets/fonts/Proxima Nova Bold.otf
+          weight: 600
+        - asset: assets/fonts/Proxima Nova Black.otf
+          weight: 700

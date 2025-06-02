@@ -19,6 +19,8 @@ class PickOptionWidget extends StatelessWidget {
             'Pick your option.\nSee who has a similar mind.',
             textAlign: TextAlign.start,
             style: TextStyle(
+              height: 1.2,
+              fontFamily: Font.proxima,
               color: Color(0xFFE5E5E5),
               fontSize: 12.sp,
               fontWeight: FontWeight.w400,

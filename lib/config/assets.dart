@@ -9,3 +9,7 @@ abstract class Assets {
   static String mic = 'mic'.svg;
   static String arrowButton = 'arrow-button'.svg;
 }
+
+abstract class Font {
+  static String proxima = 'ProximaNova';
+}

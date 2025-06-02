@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:stroll_activity/config/app_extensions.dart';
+import 'package:stroll_activity/config/assets.dart';
 
 class HomePromptSelector extends StatefulWidget {
   const HomePromptSelector({super.key});
@@ -24,13 +25,13 @@ class _HomePromptSelectorState extends State<HomePromptSelector> {
       return Padding(
         padding: EdgeInsets.symmetric(horizontal: 16.h),
         child: SizedBox(
-          height: 138.h,
+          height: 126.h,
           child: GridView.builder(
             itemCount: 4,
             padding: EdgeInsets.zero,
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
-                childAspectRatio: 166.w / 62.h,
+                childAspectRatio: 166.w / 57.h,
                 mainAxisSpacing: 12.h,
                 crossAxisSpacing: 12.w),
             itemBuilder: (context, index) {
@@ -67,6 +68,7 @@ class _HomePromptSelectorState extends State<HomePromptSelector> {
                             _ => 'D',
                           }),
                           style: TextStyle(
+                            fontFamily: Font.proxima,
                             color: Color(0xFFC4C4C4),
                             fontSize: 12.sp,
                             fontWeight: FontWeight.w400,
@@ -83,10 +85,12 @@ class _HomePromptSelectorState extends State<HomePromptSelector> {
                           _ => 'The serenity past midnight',
                         }),
                         style: TextStyle(
+                          height: 1.05,
+                          fontFamily: Font.proxima,
                           color: index == value
                               ? Color(0xFFF5F5F5)
                               : Color(0xFFC4C4C4),
-                          fontSize: 13.sp,
+                          fontSize: 14.sp,
                           fontWeight: FontWeight.w400,
                         ),
                       ),

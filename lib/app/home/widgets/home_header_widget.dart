@@ -36,12 +36,17 @@ class HomeHeaderWidget extends StatelessWidget {
               height: 15.h,
             ),
             3.27.sbW,
-            Text(
-              '22h 00m',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 12.sp,
-                fontWeight: FontWeight.w600,
+            Padding(
+              padding: EdgeInsets.only(top: 3.5.h),
+              child: Text(
+                '22h 00m',
+                style: TextStyle(
+                  height: 1,
+                  fontFamily: Font.proxima,
+                  color: Colors.white,
+                  fontSize: 12.sp,
+                  fontWeight: FontWeight.w600,
+                ),
               ),
             ),
             9.73.sbW,
@@ -50,12 +55,17 @@ class HomeHeaderWidget extends StatelessWidget {
               height: 15.h,
             ),
             4.24.sbW,
-            Text(
-              '100',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 12.sp,
-                fontWeight: FontWeight.w600,
+            Padding(
+              padding: EdgeInsets.only(top: 3.5.h),
+              child: Text(
+                '100',
+                style: TextStyle(
+                  height: 1,
+                  fontFamily: Font.proxima,
+                  color: Colors.white,
+                  fontSize: 12.sp,
+                  fontWeight: FontWeight.w600,
+                ),
               ),
             ),
           ],
