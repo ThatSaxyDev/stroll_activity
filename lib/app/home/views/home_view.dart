@@ -33,7 +33,7 @@ class _HomeViewState extends State<HomeView> {
           HomePromptWidget(),
           12.sbH,
           PickOptionWidget(),
-          96.sbH,
+          86.sbH,
         ],
       ),
     );

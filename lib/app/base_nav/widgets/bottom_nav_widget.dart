@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:stroll_activity/app/home/views/home_view.dart';
@@ -23,22 +25,22 @@ class BottomNavWidget extends StatelessWidget {
     return Material(
       elevation: 0,
       child: Container(
-        height: 79.h,
+        padding: EdgeInsets.symmetric(horizontal: 14.w),
+        height: Platform.isAndroid ? 60.h : 79.h,
         width: width(context),
         decoration: BoxDecoration(
           color: Color(0xFF0F1115),
         ),
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: List.generate(
             BaseNavState.values.length,
             (index) {
               BaseNavState baseNavView = BaseNavState.values[index];
               return SizedBox(
-                width: 65.w,
+                width: 44.w,
                 child: Column(
                   children: [
-                    8.sbH,
                     MyIcon(
                       icon: baseNavView.name.svg,
                       height: 44.h,
