@@ -46,6 +46,14 @@ class _HomePromptSelectorState extends State<HomePromptSelector> {
                           width: 2,
                         )
                       : null,
+                  boxShadow: [
+                    BoxShadow(
+                      color: Color(0x4D000000),
+                      offset: Offset(2, 2),
+                      blurRadius: 8,
+                      spreadRadius: 0,
+                    ),
+                  ],
                 ),
                 child: Row(
                   spacing: 9.h,
